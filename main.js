@@ -6,6 +6,7 @@ const app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: true}))
+app.use(express.static('css/'))
 
 const ip = '10.0.0.135'
 const port = 6469

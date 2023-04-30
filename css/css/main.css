@@ -1,0 +1,15 @@
+.data {
+    width: 250px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
