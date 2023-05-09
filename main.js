@@ -8,15 +8,14 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('css/'))
 
-const ip = '10.0.0.135'
+//const ip = '10.0.0.135'
+const ip = '127.0.0.1'
 const port = 6469
 
 
 function clearList(){
-    for (i in list){
-        list.pop(i)
-        console.log(list)
-    }
+    list.length  = 0
+    res.redirect('/')
 }
 
 
@@ -39,6 +38,7 @@ app.post('/', function(req,res){
 
     res.redirect('/')
 })
+
 
 
 
